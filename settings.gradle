@@ -1,0 +1,4 @@
+rootProject.name = 'ucoode'
+include 'gradleplugin'
+include 'ucoodeplugin'
+

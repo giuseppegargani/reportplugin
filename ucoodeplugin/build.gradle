@@ -1,0 +1,50 @@
+plugins {
+    id 'groovy'
+    // Apply the Java Gradle plugin development plugin to add support for developing Gradle plugins
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+    id "com.gradle.plugin-publish" version "1.0.0-rc-2"
+}
+
+pluginBundle {
+    website = 'https://github.com/giuseppegargani/greetings_plugin'
+    vcsUrl = 'https://github.com/giuseppegargani/greetings_plugin'
+    tags = ['example', 'try', 'prova', 'tentativo']
+}
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    google()
+    mavenCentral()
+    //per caricamento artifactId locale per plugin
+    mavenLocal()
+    gradlePluginPortal()
+    jcenter() // Warning: this repository is going to shut down soon
+}
+
+//Questo e' il gruppo!!!
+group = 'com.github.giuseppegargani'
+version = '0.01'
+
+gradlePlugin {
+    // Define the plugin
+    plugins {
+        reportplugin {
+            id = 'com.github.giuseppegargani.reportplugin'
+            displayName = 'ucoodeplugin'
+            description = 'FIRST CUSTOM PLUGIN'
+            implementationClass = 'com.github.giuseppegargani.ReportPlugin'
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
