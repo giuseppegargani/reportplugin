@@ -26,7 +26,7 @@ repositories {
 
 //Questo e' il gruppo!!!
 group = 'com.github.giuseppegargani'
-version = '0.01'
+version = '0.02'
 
 gradlePlugin {
     // Define the plugin
@@ -41,7 +41,7 @@ gradlePlugin {
 }
 
 dependencies {
-    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
+    implementation 'org.codehaus.groovy:groovy-all:3.0.7'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
