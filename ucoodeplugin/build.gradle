@@ -32,7 +32,7 @@ def myRpm = artifacts.add('archives', file("$buildDir\\prova.txt"))
 
 publishing {
     publications {
-        pub(MavenPublication) {
+        maven(MavenPublication) {
             artifact myRpm
             artifactId "documenti"
 
