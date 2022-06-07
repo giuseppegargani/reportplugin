@@ -3,7 +3,7 @@
   "component": {
     "group": "com.github.giuseppegargani",
     "module": "report",
-    "version": "0.04",
+    "version": "0.05",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -25,13 +25,13 @@
       },
       "files": [
         {
-          "name": "report-0.04.jar",
-          "url": "report-0.04.jar",
+          "name": "report-0.05.jar",
+          "url": "report-0.05.jar",
           "size": 45268,
-          "sha512": "edd4cf619a33c313df758868b9ad2003d9503432c7773efafa4fa281e263fa4b56e40cd56c13d2fd103fa099be7d218c0c9d12df72c4e3a692cfd314dfa2e269",
-          "sha256": "673f9331980cc404785f634da83bc5d0d7b743907ab76220537229fbf741072e",
-          "sha1": "1bef50aeb16fbf6ce5205c9006abcfc8669775db",
-          "md5": "91f7aa777f63a19d1c1e0e94162018bf"
+          "sha512": "4f57f7d087b09150c79f964a42b4830288a0454fa7c0a271df099a8c105325d45164f84d40412132556892a61eae08da83565959f2a0f7571a81b4f922c3987d",
+          "sha256": "4b37dd6b26cf337b7101623a1fe483f93de216f9ba5b8c4beea27a5263a65563",
+          "sha1": "58b6a8887980cde70afa529c497ff85d49e8c663",
+          "md5": "c218f687ec3562ffcd130f749e8601eb"
         }
       ]
     },
@@ -55,13 +55,13 @@
       ],
       "files": [
         {
-          "name": "report-0.04.jar",
-          "url": "report-0.04.jar",
+          "name": "report-0.05.jar",
+          "url": "report-0.05.jar",
           "size": 45268,
-          "sha512": "edd4cf619a33c313df758868b9ad2003d9503432c7773efafa4fa281e263fa4b56e40cd56c13d2fd103fa099be7d218c0c9d12df72c4e3a692cfd314dfa2e269",
-          "sha256": "673f9331980cc404785f634da83bc5d0d7b743907ab76220537229fbf741072e",
-          "sha1": "1bef50aeb16fbf6ce5205c9006abcfc8669775db",
-          "md5": "91f7aa777f63a19d1c1e0e94162018bf"
+          "sha512": "4f57f7d087b09150c79f964a42b4830288a0454fa7c0a271df099a8c105325d45164f84d40412132556892a61eae08da83565959f2a0f7571a81b4f922c3987d",
+          "sha256": "4b37dd6b26cf337b7101623a1fe483f93de216f9ba5b8c4beea27a5263a65563",
+          "sha1": "58b6a8887980cde70afa529c497ff85d49e8c663",
+          "md5": "c218f687ec3562ffcd130f749e8601eb"
         }
       ]
     },
@@ -75,13 +75,13 @@
       },
       "files": [
         {
-          "name": "report-0.04-javadoc.jar",
-          "url": "report-0.04-javadoc.jar",
+          "name": "report-0.05-javadoc.jar",
+          "url": "report-0.05-javadoc.jar",
           "size": 261,
-          "sha512": "c5133d342135bdcd34c859e4943839cbcaba78c237a2fec777e8ebcdab307fe7593961af94bfc5f63f83b5302cb7b4c2a60d634994fa7b2f8aeabd30415faad4",
-          "sha256": "a1d5861f6b71941197b7c97108a881a4dabad0ce42abd5c73dd778843eb9ebee",
-          "sha1": "c087bf73a9760e9fadebe96645718870cc846f6d",
-          "md5": "f4dcf086e454219fe200d0235b5e4f3e"
+          "sha512": "bc5982e96a83bbf9586cd2e8df6d868e0f0cd2704ca379fb44c389dfc4ddc00cb3f78fa609f9434d5bf00a19ae24e401c1d6f4f2c1bc07f97acd0b7eb28f63ed",
+          "sha256": "9076229a47a77e2d1f99e7273af629d90a5836cf0698bbef56033281ed674713",
+          "sha1": "9cd8152e9f7eedfb5bd42dabf41f58629665847b",
+          "md5": "79d25789533856eec03fdf74c73ed1d0"
         }
       ]
     },
@@ -95,13 +95,13 @@
       },
       "files": [
         {
-          "name": "report-0.04-sources.jar",
-          "url": "report-0.04-sources.jar",
+          "name": "report-0.05-sources.jar",
+          "url": "report-0.05-sources.jar",
           "size": 3752,
-          "sha512": "5b29fbecb227b30b24c9693c74263d4ca4c53c2b003096c26a6560c1cab610505a16b8bcdf393a9e2caa5fdf7e857c61a88531dcf94d1a678d8d790cc380cdf7",
-          "sha256": "c923333bc36c34ea00230b4c1f0f5698b879104ac4858870f0bade220f4e93b8",
-          "sha1": "254aae2fe8b75939f900b29ccb30480775b1fe35",
-          "md5": "8f99250e89a83f3c3676e16a6868383d"
+          "sha512": "c67c4a17db37a834600a23e55d539fb31d5722de67d23f913e44254655864d6a63033988f727e2ab427ebc5a6cd2e85e5b63b894ed33bf20a63b5c57b88d76d2",
+          "sha256": "f7a3f7bdbc84c931ca370d0b286a64127948fc796f96d05c9141757af46f8b54",
+          "sha1": "9e7cf347414c305078088345c1dc594d64daca68",
+          "md5": "7e3a6ca73a32f682aa49abb6491b4839"
         }
       ]
     }

@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.giuseppegargani.report</groupId>
   <artifactId>com.github.giuseppegargani.report.gradle.plugin</artifactId>
-  <version>0.04</version>
+  <version>0.05</version>
   <packaging>pom</packaging>
   <name>ucoodereport</name>
   <description>FIRST CUSTOM PLUGIN</description>
@@ -11,7 +11,7 @@
     <dependency>
       <groupId>com.github.giuseppegargani</groupId>
       <artifactId>report</artifactId>
-      <version>0.04</version>
+      <version>0.05</version>
     </dependency>
   </dependencies>
 </project>
