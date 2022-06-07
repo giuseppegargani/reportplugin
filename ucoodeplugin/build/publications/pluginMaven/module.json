@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.giuseppegargani",
+    "module": "ucoodeplugin",
+    "version": "0.05",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "ucoodeplugin-0.05.jar",
+          "url": "ucoodeplugin-0.05.jar",
+          "size": 45105,
+          "sha512": "446878e84137be4b9f959ce13ae0a7c0405eaa842e682c1be1812e42ef4499b74065770d597e90f88d85ed444745e42d5df92c9eecf43ae3a71b554d458e8002",
+          "sha256": "b16227e9e57ca1851a39cea6986ac00eda14633522d07d21a860a9ec3b2aa129",
+          "sha1": "dc38ed784ad47ce1c7318d32194feb1c405a3b4f",
+          "md5": "1a78019206815ad62baf263d840d844f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.codehaus.groovy",
+          "module": "groovy-all",
+          "version": {
+            "requires": "3.0.7"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ucoodeplugin-0.05.jar",
+          "url": "ucoodeplugin-0.05.jar",
+          "size": 45105,
+          "sha512": "446878e84137be4b9f959ce13ae0a7c0405eaa842e682c1be1812e42ef4499b74065770d597e90f88d85ed444745e42d5df92c9eecf43ae3a71b554d458e8002",
+          "sha256": "b16227e9e57ca1851a39cea6986ac00eda14633522d07d21a860a9ec3b2aa129",
+          "sha1": "dc38ed784ad47ce1c7318d32194feb1c405a3b4f",
+          "md5": "1a78019206815ad62baf263d840d844f"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ucoodeplugin-0.05-javadoc.jar",
+          "url": "ucoodeplugin-0.05-javadoc.jar",
+          "size": 261,
+          "sha512": "e19014a3538181b4870e858f4655fcf770ee6f301c8781f9a428c441fb0e44402b0abec03e9a8e04426200f84ca0c76ccf4ee0516332c7a85f3353622d0dd542",
+          "sha256": "b07c9ef60cb3c538b0f5af36188c5b34f8d108935ac9b8642db863c1af2edfd8",
+          "sha1": "911a6c1f7ffe4f5b94675203d62eed678de0a002",
+          "md5": "68d9a6a7fd964e2e696ae4440938ba9c"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ucoodeplugin-0.05-sources.jar",
+          "url": "ucoodeplugin-0.05-sources.jar",
+          "size": 3180,
+          "sha512": "92625789482e73365b110e89437e3a9843b5545d542656761dce43070a894d43b34273974ccf7e4aeaca4f15c4e0eda51ad531a4ab0e151a667e5a26cad6415a",
+          "sha256": "baf69d5813c38bf25f4127c423b24f4b09e1cd7444f03dfb6145a717af24f9d3",
+          "sha1": "8a4f3ffa223b689716a1a3325c61f6f279b6a7ee",
+          "md5": "af60c21406b36c2bf29c8013d5f48b4f"
+        }
+      ]
+    }
+  ]
+}
