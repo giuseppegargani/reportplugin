@@ -3,11 +3,13 @@
   <groupId>com.github.giuseppegargani.report</groupId>
   <artifactId>com.github.giuseppegargani.report.gradle.plugin</artifactId>
   <versioning>
-    <latest>0.01</latest>
-    <release>0.01</release>
+    <latest>0.04</latest>
+    <release>0.04</release>
     <versions>
       <version>0.01</version>
+      <version>0.03</version>
+      <version>0.04</version>
     </versions>
-    <lastUpdated>20220531015152</lastUpdated>
+    <lastUpdated>20220606203747</lastUpdated>
   </versioning>
 </metadata>

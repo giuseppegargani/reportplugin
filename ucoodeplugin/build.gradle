@@ -7,6 +7,10 @@ plugins {
     id "com.gradle.plugin-publish" version "1.0.0-rc-2"
 }
 
+
+group 'com.github.giuseppegargani'
+version '0.05'
+
 pluginBundle {
     website = 'https://github.com/giuseppegargani/greetings_plugin'
     vcsUrl = 'https://github.com/giuseppegargani/greetings_plugin'
@@ -24,19 +28,24 @@ repositories {
     jcenter() // Warning: this repository is going to shut down soon
 }
 
-//Questo e' il gruppo!!!
-group = 'com.github.giuseppegargani'
-version = '0.02'
+def myRpm = artifacts.add('archives', file("$buildDir\\prova.txt"))
 
-gradlePlugin {
-    // Define the plugin
-    plugins {
-        reportplugin {
-            id = 'com.github.giuseppegargani.reportplugin'
-            displayName = 'ucoodeplugin'
-            description = 'FIRST CUSTOM PLUGIN'
-            implementationClass = 'com.github.giuseppegargani.ReportPlugin'
+publishing {
+    publications {
+        pub(MavenPublication) {
+            artifact myRpm
+            artifactId "documenti"
+            //groupId 'com.github.giuseppegargani'
+            //version '0.02'
         }
+    }
+}
+
+task('eccomi') {
+    doLast {
+        def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
+        if(elemento.exists()) { println("IL FILE ESISTE")} else { println("IL FILE NON ESISTE") }
+        println("TASK LOCALE DEL PLUGIN e $elemento")
     }
 }
 

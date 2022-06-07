@@ -8,7 +8,7 @@ plugins {
 }
 
 group 'com.github.giuseppegargani'
-version '0.03'
+version '0.04'
 
 pluginBundle {
     website = 'https://github.com/giuseppegargani/greetings_plugin'

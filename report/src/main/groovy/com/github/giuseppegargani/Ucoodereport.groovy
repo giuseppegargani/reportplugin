@@ -168,10 +168,40 @@ class Ucoodereport implements Plugin<Project> {
             //def stringa = getClass().getResource('../prova.txt').text
             //def variabile = it.fileTree('./').toList()
             //def valore = getClass().getResource(null).text
+            //def variab = this.class.getResource('./').text
+            //def parente = thisObject.clone().properties
+            //def cart = thisObject.class.location.getFile()
+            //def albero = thisObject.get
+            //def locuzione =  File('build/prova.txt')
+
             def cartella = getPath()
             def cartellina = getClass().location
-            println("SCRITTURA e proprietà: ${getClass().properties} $cartella e: $cartellina")
+            //println("SCRITTURA e proprietà: locuzione: e  ${getClass().properties} $cartella e: $cartellina")
         }
+
+        /*project.task ('artifactsInfo') {
+            doLast {
+                project.configurations
+                        .findByName('archives')
+                        .allArtifacts
+                        .each { artifact ->
+                            println artifact.file.name
+                        }
+            }
+        }*/
+
+        /*project.task("downloadGradleReadme") {
+
+            def target = uri("https://raw.githubusercontent.com/gradle/gradle/master/README.md")
+            def downloadedFile = file("$buildDir/gradle-readme.md")
+
+            doLast {
+
+                ant.invokeMethod("get", mapOf("src": target, "dest": downloadedFile, "verbose": true,))
+
+                logger.lifecycle("Downloaded Gradle README.md: ${downloadedFile.readText()}")
+            }
+        }*/
 
     }
 }
