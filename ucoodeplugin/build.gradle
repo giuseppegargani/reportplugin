@@ -63,8 +63,8 @@ publishing {
                     url = 'http://example.com/my-library/'
                 }
             }*/
-            /*groupId 'com.github.giuseppegargani'
-            version '0.05'*/
+            groupId 'com.github.giuseppegargani'
+            version '0.05'
         }
     }
 }
