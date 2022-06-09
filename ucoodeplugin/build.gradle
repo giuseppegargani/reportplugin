@@ -30,13 +30,13 @@ repositories {
 
 def myRpm = artifacts.add('archives', file("prova.txt"))
 
-publishing {
+/*publishing {
     publications {
         pub(MavenPublication) {
             artifact myRpm
             artifactId "documenti"
 
-            /*pom {
+            *//*pom {
                 name = 'My Library'
                 description = 'A concise description of my library'
                 url = 'http://www.example.com/library'
@@ -62,12 +62,12 @@ publishing {
                     developerConnection = 'scm:git:ssh://example.com/my-library.git'
                     url = 'http://example.com/my-library/'
                 }
-            }*/
+            }*//*
             groupId 'com.github.giuseppegargani'
             version '0.05'
         }
     }
-}
+}*/
 
 task('eccomi') {
     doLast {
