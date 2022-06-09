@@ -192,12 +192,13 @@ class Ucoodereport implements Plugin<Project> {
 
         /*project.task("downloadGradleReadme") {
 
-            def target = uri("https://raw.githubusercontent.com/gradle/gradle/master/README.md")
-            def downloadedFile = file("$buildDir/gradle-readme.md")
+            //def target = uri("https://raw.githubusercontent.com/gradle/gradle/master/README.md")
+            def target = project.uri("https://www.dropbox.com/s/dfjhwouxxza69hn/documenti-0.05.txt")
+            def downloadedFile = ("${project.file(project.buildDir)}/gradle-readme.txt")
 
             doLast {
 
-                ant.invokeMethod("get", mapOf("src": target, "dest": downloadedFile, "verbose": true,))
+                project.ant.invokeMethod("get", mapOf("src": target, "dest": downloadedFile, "verbose": true))
 
                 logger.lifecycle("Downloaded Gradle README.md: ${downloadedFile.readText()}")
             }
