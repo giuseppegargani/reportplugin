@@ -69,7 +69,7 @@ publishing {
     }
 }
 
-task('eccomi') {
+tasks.register('eccomi') {
     doLast {
         //def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
 //        def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
