@@ -69,6 +69,7 @@ publishing {
     }
 }
 
+
 tasks.register('eccomi') {
     doLast {
         //def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
@@ -78,6 +79,7 @@ tasks.register('eccomi') {
         println("SCRITTURA DENTRO LA BUILD!!!!!!!!!")
     }
 }
+build.finalizedBy(eccomi)
 
 dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.7'
