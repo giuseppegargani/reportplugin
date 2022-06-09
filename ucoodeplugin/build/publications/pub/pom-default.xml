@@ -6,29 +6,4 @@
   <artifactId>documenti</artifactId>
   <version>0.05</version>
   <packaging>txt</packaging>
-  <name>My Library</name>
-  <description>A concise description of my library</description>
-  <url>http://www.example.com/library</url>
-  <licenses>
-    <license>
-      <name>The Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-    </license>
-  </licenses>
-  <developers>
-    <developer>
-      <id>johnd</id>
-      <name>John Doe</name>
-      <email>john.doe@example.com</email>
-    </developer>
-  </developers>
-  <scm>
-    <connection>scm:git:git://example.com/my-library.git</connection>
-    <developerConnection>scm:git:ssh://example.com/my-library.git</developerConnection>
-    <url>http://example.com/my-library/</url>
-  </scm>
-  <properties>
-    <myProp>value</myProp>
-    <prop.with.dots>anotherValue</prop.with.dots>
-  </properties>
 </project>
