@@ -28,10 +28,10 @@
           "name": "ucoodeplugin-0.05.jar",
           "url": "ucoodeplugin-0.05.jar",
           "size": 45105,
-          "sha512": "446878e84137be4b9f959ce13ae0a7c0405eaa842e682c1be1812e42ef4499b74065770d597e90f88d85ed444745e42d5df92c9eecf43ae3a71b554d458e8002",
-          "sha256": "b16227e9e57ca1851a39cea6986ac00eda14633522d07d21a860a9ec3b2aa129",
-          "sha1": "dc38ed784ad47ce1c7318d32194feb1c405a3b4f",
-          "md5": "1a78019206815ad62baf263d840d844f"
+          "sha512": "8998778548ea24cbbedb8ff544a56efb37bc486dcc661525b1ba3519168d547257dd27f6a47e70340d09d4b7fd2f8acf5fa5f119a12a705a369652d3bc53f592",
+          "sha256": "e8a22a2b1d3e1ead0a447c214a09b1826125d49531a8dbf7e99e2b350cf18f14",
+          "sha1": "70f502e0c926c4c51229418a1c0997b21a140c5f",
+          "md5": "b1c4701686b040ec74da2ac15c4c6966"
         }
       ]
     },
@@ -58,10 +58,10 @@
           "name": "ucoodeplugin-0.05.jar",
           "url": "ucoodeplugin-0.05.jar",
           "size": 45105,
-          "sha512": "446878e84137be4b9f959ce13ae0a7c0405eaa842e682c1be1812e42ef4499b74065770d597e90f88d85ed444745e42d5df92c9eecf43ae3a71b554d458e8002",
-          "sha256": "b16227e9e57ca1851a39cea6986ac00eda14633522d07d21a860a9ec3b2aa129",
-          "sha1": "dc38ed784ad47ce1c7318d32194feb1c405a3b4f",
-          "md5": "1a78019206815ad62baf263d840d844f"
+          "sha512": "8998778548ea24cbbedb8ff544a56efb37bc486dcc661525b1ba3519168d547257dd27f6a47e70340d09d4b7fd2f8acf5fa5f119a12a705a369652d3bc53f592",
+          "sha256": "e8a22a2b1d3e1ead0a447c214a09b1826125d49531a8dbf7e99e2b350cf18f14",
+          "sha1": "70f502e0c926c4c51229418a1c0997b21a140c5f",
+          "md5": "b1c4701686b040ec74da2ac15c4c6966"
         }
       ]
     },
@@ -78,10 +78,10 @@
           "name": "ucoodeplugin-0.05-javadoc.jar",
           "url": "ucoodeplugin-0.05-javadoc.jar",
           "size": 261,
-          "sha512": "e19014a3538181b4870e858f4655fcf770ee6f301c8781f9a428c441fb0e44402b0abec03e9a8e04426200f84ca0c76ccf4ee0516332c7a85f3353622d0dd542",
-          "sha256": "b07c9ef60cb3c538b0f5af36188c5b34f8d108935ac9b8642db863c1af2edfd8",
-          "sha1": "911a6c1f7ffe4f5b94675203d62eed678de0a002",
-          "md5": "68d9a6a7fd964e2e696ae4440938ba9c"
+          "sha512": "8227899eaf756fc31792408634ccadb14194e2e3ff6c8c641229f7108490007994cae7133b965868d28a9db6e1be7e3d682976ff61d5a42daae23c2c4d119cc3",
+          "sha256": "823ef4e3b83e5a6c6adfe67f9eb9c59ab04f4fb5df4f22a41fc9303913a5dafd",
+          "sha1": "79e5b0bc2866ce95308176ebce6894f79c589d3e",
+          "md5": "832aa6874217605b09fab42fb14a6f0c"
         }
       ]
     },
@@ -98,10 +98,10 @@
           "name": "ucoodeplugin-0.05-sources.jar",
           "url": "ucoodeplugin-0.05-sources.jar",
           "size": 3180,
-          "sha512": "92625789482e73365b110e89437e3a9843b5545d542656761dce43070a894d43b34273974ccf7e4aeaca4f15c4e0eda51ad531a4ab0e151a667e5a26cad6415a",
-          "sha256": "baf69d5813c38bf25f4127c423b24f4b09e1cd7444f03dfb6145a717af24f9d3",
-          "sha1": "8a4f3ffa223b689716a1a3325c61f6f279b6a7ee",
-          "md5": "af60c21406b36c2bf29c8013d5f48b4f"
+          "sha512": "84e6ce48be148c959a64224fa1ec50d36c59c8c8ec28ad78535ca9823b5a5eb3bcbfb9ac54a309a49a231792ce3c29b573de2e631ab16d036f6f02b6690967a4",
+          "sha256": "9ac345423949df0354e1a0903fe0fe6e4f8413c6415adffb9bce8f96de22face",
+          "sha1": "22a9bfdfbddb0102fa2ef83344c18c2ccde702e7",
+          "md5": "ab4c3188f4ad366daed92566e9b50bcc"
         }
       ]
     }
