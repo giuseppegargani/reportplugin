@@ -69,14 +69,15 @@ publishing {
     }
 }
 
-//task('eccomi') {
-//    doLast {
-//        //def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
+task('eccomi') {
+    doLast {
+        //def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
 //        def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
 //        if(elemento.exists()) { println("IL FILE ESISTE")} else { println("IL FILE NON ESISTE") }
 //        println("TASK LOCALE DEL PLUGIN e $elemento")
-//    }
-//}
+        println("SCRITTURA DENTRO LA BUILD!!!!!!!!!")
+    }
+}
 
 dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.7'
