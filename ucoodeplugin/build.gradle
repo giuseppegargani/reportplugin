@@ -28,7 +28,7 @@ repositories {
     jcenter() // Warning: this repository is going to shut down soon
 }
 
-def myRpm = artifacts.add('archives', file("prova.txt"))
+//def myRpm = artifacts.add('archives', file("prova.txt"))
 
 /*publishing {
     publications {
@@ -69,14 +69,14 @@ def myRpm = artifacts.add('archives', file("prova.txt"))
     }
 }*/
 
-task('eccomi') {
-    doLast {
-        //def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
-        def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
-        if(elemento.exists()) { println("IL FILE ESISTE")} else { println("IL FILE NON ESISTE") }
-        println("TASK LOCALE DEL PLUGIN e $elemento")
-    }
-}
+//task('eccomi') {
+//    doLast {
+//        //def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
+//        def elemento = file("$buildDir\\prova.txt"  /*+'/src/main/groovy/com.github.giuseppegargani/prova.txt'*/)
+//        if(elemento.exists()) { println("IL FILE ESISTE")} else { println("IL FILE NON ESISTE") }
+//        println("TASK LOCALE DEL PLUGIN e $elemento")
+//    }
+//}
 
 dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.7'
