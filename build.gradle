@@ -59,7 +59,7 @@ publishing {
                 }
             }*/
             groupId 'com.github.giuseppegargani'
-            version '0.05'
+            version '0.13'
         }
     }
 }
