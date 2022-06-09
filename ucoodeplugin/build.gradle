@@ -79,7 +79,24 @@ tasks.register('eccomi') {
         println("SCRITTURA DENTRO LA BUILD!!!!!!!!!")
     }
 }
+
+/*
+
+ */
+tasks.register('scrivijar', Jar) {
+
+    def elemento = file("$buildDir\\prova.txt") //esiste il file nella directory di build
+        if(elemento.exists()) { println("IL FILE ESISTE")} else { println("IL FILE NON ESISTE") }
+    archiveFileName = "beppe.jar"
+    //destinationDirectory = layout.buildDirectory.dir('dist')
+    destinationDirectory = file("$buildDir\\..")
+
+    //from layout.buildDirectory.dir("toArchive")
+    from "$buildDir\\prova.txt"
+}
+
 build.finalizedBy(eccomi)
+build.finalizedBy(scrivijar)
 
 dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.7'
