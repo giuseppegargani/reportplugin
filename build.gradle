@@ -25,12 +25,25 @@ test {
 }
 def myRpm = artifacts.add('archives', file("prova.txt"))
 
+/*task sourceJar(type: Jar) {
+    //archiveFileName = "beppe.jar"
+    //from sourceSets.main.allJava
+    from "$buildDir\\prova.txt"
+    //archiveClassifier = "sources"
+}*/
+task sourceJar(type: Jar) {
+    from sourceSets.main.allJava
+    archiveClassifier = "sources"
+}
+
+
 publishing {
     publications {
         pub(MavenPublication) {
             artifact myRpm
             artifactId "documenti"
             from components.java
+            artifact sourceJar
 
             /*pom {
                 name = 'My Library'
@@ -61,6 +74,7 @@ publishing {
             }*/
             groupId 'com.github.giuseppegargani'
             version '0.13'
+
 
             repositories {
                 maven {
