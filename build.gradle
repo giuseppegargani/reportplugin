@@ -77,11 +77,11 @@ publishing {
             version '0.13'
 
 
-            repositories {
+            /*repositories {
                 maven {
                     url = 'https://jitpack.io'
                 }
-            }
+            }*/
         }
     }
 }
