@@ -61,6 +61,12 @@ publishing {
             }*/
             groupId 'com.github.giuseppegargani'
             version '0.13'
+
+            repositories {
+                maven {
+                    url = 'https://jitpack.io'
+                }
+            }
         }
     }
 }
