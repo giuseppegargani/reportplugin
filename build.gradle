@@ -23,7 +23,7 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-def myRpm = artifacts.add('archives', file("prova.txt"))
+//def myRpm = artifacts.add('archives', file("prova.txt"))
 
 /*task sourceJar(type: Jar) {
 //archiveFileName = "beppe.jar"
@@ -32,17 +32,53 @@ from "$buildDir\\prova.txt"
 //archiveClassifier = "sources"
 }*/
 
+//def rpmFile = file("$buildDir/../prova.txt")
+//def rpmArtifact = artifacts.add('archives', rpmFile.get().asFile) {
+//    type 'jar'
+//    builtBy 'jar'
+//}
+
+//step 1: creare Jar (di tipo jar)
 task sourceJar(type: Jar) {
-    from "$buildDir\\prova.txt"
+    if(file("$buildDir/../prova.txt").exists()) {println("IL FILE ESISTE")} else {println("il file non esiste")}
+    archiveFileName = "beppe.jar"
+    destinationDirectory = file("$buildDir/..")
+    from "$buildDir/../prova.txt"
     //archiveClassifier = "sources"
 }
 
+//step 2: Verifica esistenza file con Layout builddirectory
+task verpath(){
+    doLast {
+        //def customfile = layout.buildDirectory.file("../beppe.jar")
+        def customfile = layout.buildDirectory.dir("./")
+        if(file("$buildDir/../beppe.jar").exists()) { println("IL FILE RICHIESTO ESISTE")}else {println("IL FILE RICHIESTO NON ESISTE")}
+    }
+}
+
+//step 3: assegna ad canfiguration "archives"
+def myRpm = artifacts.add('archives', file("$buildDir/../beppe.jar"))
+
+//build.finalizedBy(sourceJar)
+
+//step 4: crea artifact
+/*tasks.register('verifica') {
+    doLast {
+        //def destinationDirector = layout.buildDirectory.dir('../')
+        if(file("$buildDir/../prova.txt").exists()) {println("IL FILE ESISTE")} else {println("il file non esiste")}
+        if(layout.buildDirectory.file('rpms/my-package.rpm'))
+        //def destinationDirector = buildDir
+        //println("eccomi $destinationDirector")
+        //if(file("${destinationDirector}/prova.txt").exists()) {println("IL FILE ESISTE")} else {println("il file non esiste")}
+    }
+}*/
 
 publishing {
     publications {
         pub(MavenPublication) {
-            //artifact myRpm
-            artifact sourceJar
+            artifact myRpm
+            //artifact sourceJar
+            //artifact rpmArtifact
             artifactId "documenti"
             from components.java
 
@@ -74,14 +110,14 @@ publishing {
                 }
             }*/
             groupId 'com.github.giuseppegargani'
-            version '0.13'
+            version '0.14'
 
 
-            /*repositories {
+            repositories {
                 maven {
                     url = 'https://jitpack.io'
                 }
-            }*/
+            }
         }
     }
 }
