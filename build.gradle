@@ -73,6 +73,9 @@ def myRpm = artifacts.add('archives', file("$buildDir/../beppe.jar"))
     }
 }*/
 
+build.dependsOn(sourceJar)
+publish.dependsOn(sourceJar)
+
 publishing {
     publications {
         pub(MavenPublication) {
