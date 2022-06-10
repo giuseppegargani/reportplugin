@@ -25,12 +25,6 @@ test {
 }
 def myRpm = artifacts.add('archives', file("prova.txt"))
 
-/*task sourceJar(type: Jar) {
-    //archiveFileName = "beppe.jar"
-    //from sourceSets.main.allJava
-    from "$buildDir\\prova.txt"
-    //archiveClassifier = "sources"
-}*/
 task sourceJar(type: Jar) {
     from sourceSets.main.allJava
     archiveClassifier = "sources"
