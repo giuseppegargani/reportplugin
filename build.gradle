@@ -30,6 +30,7 @@ publishing {
         pub(MavenPublication) {
             artifact myRpm
             artifactId "documenti"
+            from components.java
 
             /*pom {
                 name = 'My Library'
