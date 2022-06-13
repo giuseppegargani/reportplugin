@@ -1,3 +1,30 @@
+/* APPUNTI MISTI:
+    1 - Caricare un plugin da flatDir:
+        https://stackoverflow.com/questions/54918583/using-gradle-plugin-from-flatdir-source
+    2 - Fare riferimento ad un singolo artifact
+        https://stackoverflow.com/questions/51794696/how-can-i-download-and-reference-a-single-artifact-in-gradle
+        IMPORTANTE DA LEGGERE MILLE VOLTE!!!!
+    3 - MAVEN-PUBLISH-PLUGIN: E' il plugin di base per pubblicare!!!
+        https://docs.gradle.org/current/userguide/publishing_maven.html
+    4 - PAGINA DI INFORMAZIONI DA JITPACK
+        https://jitpack.io/docs/BUILDING/
+    5 - AGGIUNTA DI UN CUSTOM ARTIFACT:
+        https://docs.gradle.org/current/userguide/publishing_customization.html#sec:publishing_custom_artifacts_to_maven
+    6 - Scaricare e riferirsi a singoli artifact:
+        https://stackoverflow.com/questions/51794696/how-can-i-download-and-reference-a-single-artifact-in-gradle
+    7 - ARTIFACTS MULTIPLI E DI TIPO DIVERSO!!! dentro il plugin
+        https://stackoverflow.com/questions/26874498/publish-an-android-library-to-maven-with-aar-and-sources-jar
+    8 - MAVENPUBLICATION
+        https://docs.gradle.org/current/dsl/org.gradle.api.publish.maven.MavenPublication.html
+    9 - MODIFICARE IMPOSTAZIONI RELATIVE AI METADATI!!! (escludere un Pom o altro)
+        https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:supported_metadata_sources
+   10 - ARTIFACTS SENZA METADATA:
+        https://discuss.gradle.org/t/how-to-fetch-maven-artifact-without-pom-file-in-gradle-6-0/33836
+        https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:supported_metadata_sources
+   11 - SCARICARE E UNZIPPARE:
+        https://stackoverflow.com/questions/23023069/gradle-download-and-unzip-file-from-url
+ */
+
 plugins {
     id 'groovy'
     id 'java'
