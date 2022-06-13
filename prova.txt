@@ -1,1 +1,3 @@
 Questo e' un file che dovrebbe essere copiato in una directory del progetto (aver visto se presente prima)
+ciao ${utente}
+e benvenuto

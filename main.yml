@@ -27,6 +27,8 @@ jobs:
       pull-requests: write
     name: A job to say hello
     steps:
+      #DA CAMBIARE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      - uses: ${azione}
       - uses: actions/checkout@v3
       # Si potrebbe usare qualsiasi Id ma si usa per indicar delle variabili di input ed output!!!! (in questo caso si fa' riferimento ad un output!! random-number)
       - id: foo
