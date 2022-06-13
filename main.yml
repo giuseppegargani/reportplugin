@@ -1,0 +1,70 @@
+#on: [push]
+#
+#jobs:
+#  hello_world_job:
+#    runs-on: ubuntu-latest
+#    name: A job to say hello
+#    steps:
+#      - name: Hello world action step
+#        id: hello
+#        uses: giuseppegargani/first_custom_action@0.0.5
+#        with:
+#          who-to-greet: 'Mona the Octocat'
+#      # Use the output from the `hello` step
+#      - name: Get the output time
+#        run: echo "The time was ${{ steps.hello.outputs.time }}"
+# Commento
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: macOs-latest
+    permissions:
+      checks: write
+      contents: read
+      issues: read
+      pull-requests: write
+    name: A job to say hello
+    steps:
+      - uses: actions/checkout@v3
+      # Si potrebbe usare qualsiasi Id ma si usa per indicar delle variabili di input ed output!!!! (in questo caso si fa' riferimento ad un output!! random-number)
+      - id: foo
+        # poi si deve ricaricare esternamente!!!!!!
+        #uses: giuseppegargani/first_custom_action@0.0.10
+        uses: giuseppegargani/first_custom_action@0.0.12
+        with:
+          who-to-greet: 'Mona the Octocat'
+          java-version: 11
+      - run: echo random-number ${{ steps.foo.outputs.random-number }}
+        shell: bash
+  deploy:
+    name: deploy
+    needs: build
+    uses: giuseppegargani/second_custom_action/.github/workflows/reusable-workflow.yml@main
+#    runs-on: ubuntu-latest
+#    permissions:
+#      checks: write
+#      contents: read
+#      issues: read
+#      pull-requests: write
+#    steps:
+#       carica artifact con risultati test per leggerlo ed inviarlo
+#      - uses: actions/download-artifact@v2
+#        with:
+#          name: test
+#
+#      - name: Verifica File
+#        run: |
+#          ls
+#          cat ./JsonTestReport.json
+#          cat JsonTestReport.json
+#        #`cat JsonTestReport.json`
+#
+#      - name: Operazioni Firebase DB
+#        uses: w9jds/firebase-action@master
+#        with:
+#          args: database:set --force --debug  --project databasericette-beeb7 /giuseppegargani/ecchime JsonTestReport.json
+#        env:
+#          GCP_SA_KEY: ${{ secrets.FIREBASE_CREDENTIALS }}
+#      - uses: giuseppegargani/second_custom_action@0.0.1

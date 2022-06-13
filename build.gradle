@@ -70,7 +70,9 @@ task sourceJar(type: Jar) {
     if(file("$buildDir/../prova.txt").exists()) {println("IL FILE ESISTE")} else {println("il file non esiste")}
     archiveFileName = "beppe.jar"
     destinationDirectory = file("$buildDir/..")
+    //anche from multipli!!! ed ognuno con una sua possibile configurazione!!!!!
     from "$buildDir/../prova.txt"
+    from "$buildDir/../main.yml"
     //archiveClassifier = "sources"
 }
 
@@ -140,7 +142,7 @@ publishing {
                 }
             }*/
             groupId 'com.github.giuseppegargani'
-            version '0.14'
+            version '0.15'
 
 
             repositories {
